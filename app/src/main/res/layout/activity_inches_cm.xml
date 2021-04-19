@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#21232D"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InchesCmActivity">
+
+    <android.widget.Button
+        android:id="@+id/buttonConvCmToInches"
+        android:layout_width="379dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="Convert Cm to Inches"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextInches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint=""
+        android:textColor="#A880AF"
+        android:inputType="numberSigned|number|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewInches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/textViewInches" />
+
+    <TextView
+        android:id="@+id/textViewInches"
+        android:layout_width="102dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="244dp"
+        android:text="INCHES"
+        android:textAlignment="center"
+        android:textColor="#A880AF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCm"
+        android:layout_width="58dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="316dp"
+        android:text="CM"
+        android:textAlignment="center"
+        android:textColor="#A880AF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textColor="#A880AF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toEndOf="@+id/textViewCm" />
+
+    <android.widget.Button
+        android:id="@+id/buttonConvInchesToCm"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonshape"
+        android:text="Convert Inches to Cm"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvCmToInches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Inches -> Cm/ Cm -> Inches converter  "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#A880AF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

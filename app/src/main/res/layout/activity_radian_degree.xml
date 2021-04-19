@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#21232D"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadianDegreeActivity">
+
+    <android.widget.Button
+        android:id="@+id/buttonConvDegreesToRadians"
+        android:layout_width="379dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="Convert Degrees to Radians"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRadians"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textColor="#A880AF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewRadians"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRadians" />
+
+    <TextView
+        android:id="@+id/textViewRadians"
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="244dp"
+        android:text="RADIANS"
+        android:textAlignment="center"
+        android:textColor="#A880AF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDegrees"
+        android:layout_width="101dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="324dp"
+        android:text="DEGREES"
+        android:textAlignment="center"
+        android:textColor="#A880AF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDegrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textColor="#A880AF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewDegrees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/textViewDegrees" />
+
+    <android.widget.Button
+        android:id="@+id/buttonConvRadiansToDegrees"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonshape"
+        android:text="Convert Radians to Degrees"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvDegreesToRadians"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Radians -> Degrees/ Degrees -> Radians converter  "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#A880AF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

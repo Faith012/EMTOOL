@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#21232D"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Task2"
+        android:textAlignment="center"
+        android:textColor="#A880AF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/rad_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/buttonshape"
+        android:checkable="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchRadianDegreeActivity"
+        android:text="@string/RD"
+        android:textAllCaps="false"
+        android:textColor="#21232D"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00BCD4"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.widget.Button
+        android:id="@+id/miles_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/miles_km"
+        android:onClick="launchMilesKmActivity"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celsius_fahrenheit" />
+
+    <android.widget.Button
+        android:id="@+id/celsius_fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="launchCelsiusFahrenheitActivity"
+        android:text="@string/celsius_fahrenheit"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inches_cm" />
+
+    <android.widget.Button
+        android:id="@+id/inches_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/buttonshape"
+        android:checkable="false"
+        android:clickable="true"
+        android:text="@string/inches_cm"
+        android:onClick="launchInchesCmActivity"
+        android:textAllCaps="false"
+        android:textColor="#21232D"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00BCD4"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rad_degree"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

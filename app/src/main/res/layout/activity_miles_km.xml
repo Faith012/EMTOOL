@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#21232D"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MilesKmActivity">
+
+    <android.widget.Button
+        android:id="@+id/buttonConvKmToMiles"
+        android:layout_width="379dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:text="Convert Km to Miles"
+        android:background="@drawable/buttonshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint=""
+        android:textColor="#A880AF"
+        android:inputType="numberSigned|number|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="58dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="236dp"
+        android:text="Miles"
+        android:textColor="#A880AF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKm"
+        android:layout_width="58dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="316dp"
+        android:text="Km"
+        android:textColor="#A880AF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:textColor="#A880AF"
+        android:hint=""
+        android:inputType="numberSigned|number|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewKm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/textViewKm" />
+
+    <android.widget.Button
+        android:id="@+id/buttonConvMilesToKm"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Convert Miles to Km"
+        android:background="@drawable/buttonshape"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvKmToMiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="This is just a simple Miles -> Km/ Km -> Miles converter  "
+        android:textColor="#A880AF"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

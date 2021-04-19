@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EMTOOL</string>
+    <string name="equivalent_resistor_calculator">Equivalent Resistor Calculator</string>
+    <string name="button">Button</string>
+    <string name="conversions">Conversions</string>
+    <string name="impedance_calculator">Impedance Calculator</string>
+    <string name="volume_calculator">VOLUME CALCULATOR</string>
+    <string name="ERC">EQUIVALENT RESISTOR CALCULATOR</string>
+    <string name="RD">RADIAN-DEGREE</string>
+    <string name="inches_cm">INCHES-CM</string>
+    <string name="miles_km">MILES-KM</string>
+    <string name="celsius_fahrenheit">CELSIUS-FAHRENHEIT</string>
+    <string name="Hello1">This App is designed to make work of the Engineer easier</string>
+    <string name="Task1">Please choose one of the following tasks you need</string>
+    <string name="Task2">Please choose what you want to convert</string>
+    <string name="please_choose_an_object">Please Choose an Object</string>
+    <string name="cuboid">CUBOID</string>
+    <string name="cube">CUBE</string>
+    <string name="pyramid">PYRAMID</string>
+    <string name="prism">PRISM</string>
+
+</resources>
